@@ -1,0 +1,8 @@
+nav_node_modules
+.next
+node_modules
+dist
+build
+coverage
+.cache
+public
