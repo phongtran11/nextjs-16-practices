@@ -76,9 +76,73 @@
       "MISSING_FIELD": "Field is required"
     }
   },
+  "Users": {
+    "title": "Users",
+    "create": "Create User",
+    "searchPlaceholder": "Search users...",
+    "table": {
+      "user": "User",
+      "status": "Status",
+      "createdAt": "Created At",
+      "actions": "Actions",
+      "active": "Active",
+      "deleted": "Deleted"
+    },
+    "dialog": {
+      "createTitle": "Create User",
+      "editTitle": "Edit User",
+      "name": "Name",
+      "email": "Email",
+      "password": "Password",
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving...",
+      "create": "Create"
+    },
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete",
+      "restore": "Restore",
+      "confirmDelete": "Are you sure you want to delete this user?"
+    },
+    "Errors": {
+      "INVALID_DATA": "Invalid data provided",
+      "EMAIL_EXISTS": "Email already exists",
+      "CREATE_FAILED": "Failed to create user",
+      "UPDATE_FAILED": "Failed to update user",
+      "DELETE_FAILED": "Failed to delete user",
+      "RESTORE_FAILED": "Failed to restore user"
+    }
+  },
   "Common": {
     "loading": "Loading...",
-    "error": "Something went wrong"
+    "error": "Something went wrong",
+    "Pagination": {
+      "rowsPerPage": "Rows per page",
+      "pageOf": "Page {page} of {totalPages}",
+      "first": "Go to first page",
+      "previous": "Go to previous page",
+      "next": "Go to next page",
+      "last": "Go to last page",
+      "goTo": "Go to"
+    },
+    "PaginationInfo": {
+      "showing": "Showing {start} to {end} of {total} results",
+      "noResults": "No results found"
+    },
+    "SearchInput": {
+      "placeholder": "Search...",
+      "search": "Search"
+    },
+    "Actions": {
+      "confirm": "Are you sure?",
+      "openMenu": "Open menu",
+      "title": "Actions",
+      "edit": "Edit",
+      "delete": "Delete",
+      "restore": "Restore",
+      "cancel": "Cancel"
+    }
   },
   "Header": {
     "signIn": "Sign In",
@@ -91,7 +155,8 @@
     "orders": "Orders",
     "customers": "Customers",
     "analytics": "Analytics",
-    "settings": "Settings"
+    "settings": "Settings",
+    "users": "Users"
   },
   "Dashboard": {
     "title": "Dashboard"

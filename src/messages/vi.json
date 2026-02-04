@@ -76,9 +76,73 @@
       "MISSING_FIELD": "Trường này là bắt buộc"
     }
   },
+  "Users": {
+    "title": "Quản lý người dùng",
+    "create": "Tạo người dùng",
+    "searchPlaceholder": "Tìm kiếm người dùng...",
+    "table": {
+      "user": "Người dùng",
+      "status": "Trạng thái",
+      "createdAt": "Ngày tạo",
+      "actions": "Thao tác",
+      "active": "Hoạt động",
+      "deleted": "Đã xóa"
+    },
+    "dialog": {
+      "createTitle": "Tạo người dùng",
+      "editTitle": "Chỉnh sửa người dùng",
+      "name": "Họ tên",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "cancel": "Hủy",
+      "save": "Lưu",
+      "saving": "Đang lưu...",
+      "create": "Tạo"
+    },
+    "actions": {
+      "edit": "Sửa",
+      "delete": "Xóa",
+      "restore": "Khôi phục",
+      "confirmDelete": "Bạn có chắc chắn muốn xóa người dùng này?"
+    },
+    "Errors": {
+      "INVALID_DATA": "Dữ liệu không hợp lệ",
+      "EMAIL_EXISTS": "Email đã tồn tại",
+      "CREATE_FAILED": "Tạo người dùng thất bại",
+      "UPDATE_FAILED": "Cập nhật người dùng thất bại",
+      "DELETE_FAILED": "Xóa người dùng thất bại",
+      "RESTORE_FAILED": "Khôi phục người dùng thất bại"
+    }
+  },
   "Common": {
     "loading": "Đang tải...",
-    "error": "Đã xảy ra lỗi"
+    "error": "Đã xảy ra lỗi",
+    "Pagination": {
+      "rowsPerPage": "Số hàng mỗi trang",
+      "pageOf": "Trang {page} trên {totalPages}",
+      "first": "Về trang đầu",
+      "previous": "Trang trước",
+      "next": "Trang sau",
+      "last": "Đến trang cuối",
+      "goTo": "Đến trang"
+    },
+    "PaginationInfo": {
+      "showing": "Hiển thị {start} đến {end} trong {total} kết quả",
+      "noResults": "Không tìm thấy kết quả"
+    },
+    "SearchInput": {
+      "placeholder": "Tìm kiếm...",
+      "search": "Tìm kiếm"
+    },
+    "Actions": {
+      "confirm": "Bạn có chắc không?",
+      "openMenu": "Mở danh sách",
+      "title": "Thao tác",
+      "edit": "Sửa",
+      "delete": "Xóa",
+      "restore": "Khôi phục",
+      "cancel": "Hủy"
+    }
   },
   "Header": {
     "signIn": "Đăng nhập",
@@ -91,7 +155,8 @@
     "orders": "Đơn hàng",
     "customers": "Khách hàng",
     "analytics": "Phân tích",
-    "settings": "Cài đặt"
+    "settings": "Cài đặt",
+    "users": "Người dùng"
   },
   "Dashboard": {
     "title": "Tổng quan"

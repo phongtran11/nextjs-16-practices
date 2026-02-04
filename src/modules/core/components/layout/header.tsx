@@ -1,4 +1,4 @@
-import LocaleSwitcher from "@/components/locale-switcher";
+import LocaleSwitcher from "@/components/common/locale-switcher";
 import { getAuthSession } from "@/lib/auth-util";
 import { UserButton } from "@/modules/auth/components/user-button";
 

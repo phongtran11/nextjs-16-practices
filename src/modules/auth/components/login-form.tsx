@@ -29,7 +29,11 @@ import { LoadingButton } from "@/components/ui/loading-button";
 import { Link, useRouter } from "@/i18n/routing";
 import { authClient } from "@/lib/auth-client";
 
-export function LoginForm() {
+interface LoginFormProps {
+  redirectTo?: string;
+}
+
+export function LoginForm({ redirectTo = "/dashboard" }: LoginFormProps) {
   const t = useTranslations("Auth.login");
   const tValid = useTranslations("Auth.validation");
   const tError = useTranslations("Auth.Errors");
@@ -63,7 +67,7 @@ export function LoginForm() {
       },
       {
         onSuccess: () => {
-          router.push("/dashboard");
+          router.push(redirectTo);
           router.refresh();
         },
         onError: (ctx) => {

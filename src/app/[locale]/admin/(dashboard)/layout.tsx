@@ -9,11 +9,10 @@ export default async function Layout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
-  const session = await getAuthSession();
+  const [{ locale }, session] = await Promise.all([params, getAuthSession()]);
 
   if (!session) {
-    redirect({ href: "/login", locale });
+    redirect({ href: "/admin/login", locale });
   }
 
   return <AdminLayout>{children}</AdminLayout>;

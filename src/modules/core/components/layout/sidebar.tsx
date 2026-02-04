@@ -31,48 +31,54 @@ export function Sidebar() {
     {
       label: t("dashboard"),
       icon: LayoutDashboard,
-      href: "/dashboard",
+      href: "/admin/dashboard",
       color: "text-sky-500",
     },
     {
       label: t("products"),
       icon: Package,
-      href: "/products",
+      href: "/admin/products",
       color: "text-violet-500",
     },
     {
       label: t("orders"),
       icon: ShoppingCart,
-      href: "/orders",
+      href: "/admin/orders",
       color: "text-pink-700",
     },
     {
       label: t("customers"),
       icon: Users,
-      href: "/customers",
+      href: "/admin/customers",
       color: "text-orange-700",
     },
     {
       label: t("analytics"),
       icon: BarChart3,
-      href: "/analytics",
+      href: "/admin/analytics",
       color: "text-emerald-500",
     },
     {
       label: t("settings"),
       icon: Settings,
-      href: "/settings",
+      href: "/admin/settings",
       color: "text-gray-500",
+    },
+    {
+      label: t("users"),
+      icon: Users,
+      href: "/admin/users",
+      color: "text-blue-500",
     },
   ];
 
   return (
-    <div className="space-y-4 py-4 flex flex-col h-full bg-[#111827] text-white">
+    <div className="space-y-4 py-4 flex flex-col h-full bg-sidebar text-sidebar-foreground border-r border-sidebar-border">
       <div className="px-3 py-2 flex-1">
-        <Link href="/dashboard" className="flex items-center pl-3 mb-14">
+        <Link href="/admin/dashboard" className="flex items-center pl-3 mb-14">
           <div className="relative w-8 h-8 mr-4">
             {/* Logo placeholder */}
-            <div className="bg-white/10 rounded-lg w-full h-full flex items-center justify-center font-bold text-xl">
+            <div className="bg-sidebar-primary text-sidebar-primary-foreground rounded-lg w-full h-full flex items-center justify-center font-bold text-xl">
               S
             </div>
           </div>
@@ -84,10 +90,10 @@ export function Sidebar() {
               key={route.href}
               href={route.href}
               className={cn(
-                "text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-white hover:bg-white/10 rounded-lg transition",
+                "text-sm group flex p-3 w-full justify-start font-medium cursor-pointer hover:text-sidebar-accent-foreground hover:bg-sidebar-accent rounded-lg transition",
                 pathname === route.href
-                  ? "text-white bg-white/10"
-                  : "text-zinc-400"
+                  ? "text-sidebar-accent-foreground bg-sidebar-accent"
+                  : "text-sidebar-foreground/70"
               )}
             >
               <div className="flex items-center flex-1">
@@ -110,7 +116,7 @@ export function MobileSidebar() {
           <Menu />
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="p-0 bg-[#111827]">
+      <SheetContent side="left" className="p-0 bg-sidebar">
         <SheetHeader>
           <SheetTitle></SheetTitle>
         </SheetHeader>
